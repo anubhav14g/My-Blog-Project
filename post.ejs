@@ -1,0 +1,8 @@
+<%-include('partials/header');-%>
+<% posts.forEach(function(x) { %>
+  <%  if(x.title==postToPage){ %>
+      <h1 style="color: #e7305b"><%=x.title%></h1>
+      <p style="color: #00005c"><%=x.content%></p>
+  <%  } %>
+<% }); %>
+<%-include('partials/footer');-%>
